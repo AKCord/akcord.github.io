@@ -14,7 +14,18 @@
       <div class="content">
         <h1>akcord</h1>
         <h3>a front-end developer.</h3>
-        <p>experienced In:</p>
+        <p>experienced in:</p>
+        <p>views: <span id="counter">0</span></p>
+        <script>
+          let count = 0;
+
+          function incrementCount() {
+            count++;
+            document.getElementById("counter").innerHTML = count;
+          }
+
+          incrementCount();
+        </script>
         <section id="skills" class="skills-section">
           <div class="cells">
             <div class="cell">
@@ -34,32 +45,30 @@
               <span>node.js</span>
             </div>
             <div class="cell">
-              <img src="imgs/djs.png" alt="react logo" />
+              <img src="imgs/djs.png" alt="discord.js logo" />
               <span>discord.js</span>
             </div>
             <div class="cell">
-              <img src="imgs/mongodb.png" alt="react logo" />
+              <img src="imgs/mongodb.png" alt="mongodb logo" />
               <span>mongodb</span>
             </div>
           </div>
         </section>
-        <div class="social-media-buttons">
-          <a
-            href="https://discord.com/users/827062335620382751"
-            target="_blank"
-          >
-            <img
-              src="imgs/discord.png"
-              alt="discord logo"
-              height="200"
-              width="300"
-            />
-          </a>
-          <a href="https://github.com/AKCord" target="_blank">
-            <img src="imgs/github.png" alt="github logo" />
-          </a>
-        </div>
       </div>
+    </div>
+
+    <div class="social-media-buttons">
+      <a href="https://discord.com/users/827062335620382751" target="_blank">
+        <img
+          src="imgs/discord.png"
+          alt="discord logo"
+          height="200"
+          width="300"
+        />
+      </a>
+      <a href="https://github.com/AKCord" target="_blank">
+        <img src="imgs/github.png" alt="github logo" />
+      </a>
     </div>
   </body>
 </html>
